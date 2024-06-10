@@ -1,0 +1,6 @@
+[submodule "xero-api"]
+	path = xero-api
+	url = https://github.com/suvankargiri7/xero-api.git
+[submodule "xero-ui"]
+	path = xero-ui
+	url = https://github.com/suvankargiri7/xero-ui.git
