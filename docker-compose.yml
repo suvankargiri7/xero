@@ -4,6 +4,8 @@ services:
     image: jaypeng2015/show-me-the-money:latest
     ports:
       - '3000:3000'
+    networks:
+      - xero_network
   react:
     build: ./xero-ui
     container_name: xero-ui-container
@@ -21,5 +23,4 @@ services:
     stdin_open: true
 networks:
   xero_network:
-    external: true
-    name: xero-final_default
+    driver: bridge
